@@ -14,6 +14,7 @@ class CurrentGame {
     private var _winningCombination : [String] = []
     private var _playerCombination : [String] = []
     private var _gameBoardSize : Int = 8
+    private var _currentScore : Int = 0
     
     var winningCombination : [String] {
         get {
@@ -28,6 +29,11 @@ class CurrentGame {
     var gameBoardSize : Int {
         get {
             return _gameBoardSize
+        }
+    }
+    var currentScore : Int {
+        get {
+            return _currentScore
         }
     }
     
@@ -60,22 +66,14 @@ class CurrentGame {
     //Player's turn, which also hides winning combination
     
     //When button pressed
-//    func playerPressedSquare(buttonTag : String) {
-//        if _winningCombination.isEmpty {
-//            self.generateWinningCombination(gameBoardSize)
-//        }
-//        
-//        _playerCombination.append(buttonTag)
-//        
-//        if _playerCombination.count == _winningCombination.count {
-//            self.didPlayerWin()
-//        }
-//    }
+
     
     func didPlayerWin() -> Bool {
         if _playerCombination == _winningCombination {
+            _currentScore++
             return true
         } else {
+            _currentScore = 0
             return false
         }
     }
@@ -83,6 +81,12 @@ class CurrentGame {
     //Amount of time player has to memeorize (Countdown timer)
     
     //Play Button
+    func playAgain() {
+        _playerCombination = []
+        self.generateWinningCombination(gameBoardSize)
+        print(winningCombination)
+    }
+    
     
     //Reset Board
     
