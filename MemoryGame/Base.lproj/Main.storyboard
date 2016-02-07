@@ -163,10 +163,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSU-we-EZG">
-                                <rect key="frame" x="245" y="463" width="110" height="117"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSU-we-EZG">
+                                <rect key="frame" x="206" y="463" width="187" height="117"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="FBU-fu-0ni"/>
+                                    <constraint firstAttribute="width" constant="187" id="FBU-fu-0ni"/>
                                     <constraint firstAttribute="height" constant="117" id="vdt-U9-eza"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="100"/>
@@ -225,6 +225,7 @@
                         <outlet property="buttonSix" destination="1BU-VG-KGH" id="6Hp-hI-a7X"/>
                         <outlet property="buttonThree" destination="hoD-fP-yad" id="7tV-N7-yem"/>
                         <outlet property="buttonTwo" destination="eaw-3S-IjV" id="oIq-FK-C2X"/>
+                        <outlet property="countDownTimer" destination="WSU-we-EZG" id="a2j-XI-OFu"/>
                         <outlet property="currentScore" destination="IEd-He-pom" id="63n-LA-Z7K"/>
                         <outlet property="startButton" destination="3tO-6y-EXC" id="AkV-8K-1tP"/>
                     </connections>

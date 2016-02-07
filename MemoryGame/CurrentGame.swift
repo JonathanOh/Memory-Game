@@ -62,12 +62,6 @@ class CurrentGame {
         _playerCombination.append(String(buttonTag))
     }
     
-    //Display Winning combination
-    //Player's turn, which also hides winning combination
-    
-    //When button pressed
-
-    
     func didPlayerWin() -> Bool {
         if _playerCombination == _winningCombination {
             _currentScore++
@@ -77,8 +71,6 @@ class CurrentGame {
             return false
         }
     }
-    
-    //Amount of time player has to memeorize (Countdown timer)
     
     //Play Button
     func playAgain() {
